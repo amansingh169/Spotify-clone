@@ -20,3 +20,30 @@ body {
   background-color: var(--bg-color);
   color: var(--color);
 }
+
+.flex {
+  display: flex;
+
+  &.jc-c {
+    justify-content: center;
+  }
+  &.ai-c {
+    align-items: center;
+  }
+}
+.flex-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+
+  &.pi-c {
+    place-items: center;
+  }
+  &.pc-c {
+    place-content: center;
+  }
+}
