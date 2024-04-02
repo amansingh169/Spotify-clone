@@ -1,4 +1,95 @@
 @forward "globals";
 @forward "layout";
+@use "../scss/util/" as u;
 
 // Main CSS
+
+.main {
+  // flex
+  padding: u.rem(8);
+  gap: u.rem(8);
+  background-color: black;
+
+  &__left {
+    gap: u.rem(8);
+  }
+  &__right {
+    background-color: var(--light-bg-color);
+  }
+
+  &__nav {
+    padding: u.rem(20) u.rem(25);
+    gap: u.rem(8);
+    list-style: none;
+    margin: 0;
+    background-color: var(--light-bg-color);
+
+    & > :nth-child(1) {
+      margin-bottom: u.rem(15);
+    }
+    & > li img {
+      width: u.rem(25);
+    }
+
+    .active {
+      color: var(--active-color);
+    }
+  }
+
+  &__library {
+    overflow: hidden;
+    background-color: var(--light-bg-color);
+
+    .left-link {
+      translate: u.rem(10);
+    }
+
+    .row-1 {
+      justify-content: space-between;
+      padding: u.rem(10) u.rem(15);
+      gap: u.rem(8);
+
+      .icon-btn:nth-child(1) {
+        margin-right: u.rem(8);
+      }
+    }
+    .row-2 {
+      padding: u.rem(10) u.rem(15);
+      gap: u.rem(8);
+    }
+  }
+
+  &__lib-list {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--transparent-light) transparent;
+
+    .lib-head {
+      padding: 0 u.rem(15);
+      justify-content: space-between;
+
+      .sort-btn {
+        border: 0;
+        gap: u.rem(10);
+        translate: 0;
+
+        img {
+          width: u.rem(16);
+        }
+
+        &:hover {
+          scale: 1.05;
+        }
+      }
+    }
+
+    .lib-container {
+      // overflow: hidden;
+      margin-block: u.rem(7);
+      padding: 0 u.rem(8);
+    }
+  }
+
+  // Right part
+}

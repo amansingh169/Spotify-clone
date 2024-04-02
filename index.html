@@ -7,6 +7,127 @@
     <title>SCSS</title>
   </head>
   <body>
+    <div class="main flex">
+      <div class="main__left flex-col">
+        <ul class="main__nav flex-col rounded">
+          <li class="active">
+            <a href="#" class="left-link flex ai-c"><img src="app/assets/home.svg" alt="Home" />Home</a>
+          </li>
+          <li>
+            <a href="#" class="left-link flex ai-c"><img src="app/assets/search.svg" alt="Srch" />Search</a>
+          </li>
+        </ul>
+
+        <div class="main__library flex-col rounded">
+          <div class="row-1 flex">
+            <a href="#" class="left-link flex ai-c"><img src="app/assets/library.svg" alt="Lib" />Your Library</a>
+
+            <div class="flex">
+              <button class="icon-btn"><img src="app/assets/plus.svg" alt="add" /></button>
+              <button class="icon-btn"><img src="app/assets/arrow-right.svg" alt="add" /></button>
+            </div>
+          </div>
+
+          <div class="row-2 flex">
+            <button class="round-btn">Playlists</button>
+            <button class="round-btn">Artists</button>
+            <button class="round-btn">Albums</button>
+          </div>
+
+          <div class="main__lib-list">
+            <div class="lib-head flex">
+              <button class="icon-btn"><img src="app/assets/search.svg" alt="Srch" /></button>
+
+              <button class="sort-btn left-link flex ai-c" style="background-color: transparent">
+                <span class="sort-label">Recent</span>
+                <img src="app/assets/sort.svg" alt="Sort" />
+              </button>
+            </div>
+
+            <div class="lib-container">
+              <div class="lib-item flex ai-c rounded">
+                <div class="lib-img">
+                  <img src="app/assets/sample.png" alt="img" />
+                </div>
+
+                <div class="lib-item-info">
+                  <h3>Title</h3>
+                  <p>Album</p>
+                </div>
+              </div>
+
+              <div class="lib-item flex ai-c rounded">
+                <div class="lib-img">
+                  <img src="app/assets/sample.png" alt="img" />
+                </div>
+
+                <div class="lib-item-info">
+                  <h3>Title</h3>
+                  <p>Album</p>
+                </div>
+              </div>
+
+              <div class="lib-item flex ai-c rounded">
+                <div class="lib-img">
+                  <img src="app/assets/sample.png" alt="img" />
+                </div>
+
+                <div class="lib-item-info">
+                  <h3>Title</h3>
+                  <p>Album</p>
+                </div>
+              </div>
+
+              <div class="lib-item flex ai-c rounded">
+                <div class="lib-img">
+                  <img src="app/assets/sample.png" alt="img" />
+                </div>
+
+                <div class="lib-item-info">
+                  <h3>Title</h3>
+                  <p>Album</p>
+                </div>
+              </div>
+
+              <div class="lib-item flex ai-c rounded">
+                <div class="lib-img">
+                  <img src="app/assets/sample.png" alt="img" />
+                </div>
+
+                <div class="lib-item-info">
+                  <h3>Title</h3>
+                  <p>Album</p>
+                </div>
+              </div>
+
+              <div class="lib-item flex ai-c rounded">
+                <div class="lib-img">
+                  <img src="app/assets/sample.png" alt="img" />
+                </div>
+
+                <div class="lib-item-info">
+                  <h3>Title</h3>
+                  <p>Album</p>
+                </div>
+              </div>
+
+              <div class="lib-item flex ai-c rounded">
+                <div class="lib-img">
+                  <img src="app/assets/sample.png" alt="img" />
+                </div>
+
+                <div class="lib-item-info">
+                  <h3>Title</h3>
+                  <p>Album</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__right rounded"></div>
+    </div>
     <script src="app/js/script.js"></script>
   </body>
 </html>

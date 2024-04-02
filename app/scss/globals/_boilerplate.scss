@@ -11,19 +11,26 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   font-family: u.$font;
   background-color: var(--bg-color);
-  color: var(--color);
+  color: var(--inactive-color);
 }
 
 .flex {
   display: flex;
 
+  &-col {
+    display: flex;
+    flex-direction: column;
+  }
   &.jc-c {
     justify-content: center;
   }
@@ -46,4 +53,97 @@ body {
   &.pc-c {
     place-content: center;
   }
+}
+
+.rounded {
+  border-radius: u.rem(7);
+}
+
+.round-btn {
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--active-color);
+  padding: u.rem(8) u.rem(12);
+  border-radius: 20px;
+  background-color: var(--transparent-default);
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--transparent-light);
+  }
+  &:active {
+    background-color: var(--transparent-dark);
+  }
+}
+
+.icon-btn {
+  display: grid;
+  place-items: center;
+
+  width: u.rem(32);
+  aspect-ratio: 1;
+
+  border: none;
+  border-radius: 100%;
+  background-color: hsla(0, 0%, 0%, 0);
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--transparent-default);
+  }
+  &:active {
+    background-color: var(--transparent-dark);
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+.left-link {
+  gap: u.rem(20);
+  color: var(--inactive-link-color);
+  font-weight: 600;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--active-color);
+  }
+
+  img {
+    width: u.rem(25);
+  }
+}
+
+.lib-item {
+  padding: 7px;
+  gap: u.rem(10);
+
+  .lib-img {
+    width: u.rem(50);
+    height: u.rem(50);
+
+    img {
+      border-radius: u.rem(4);
+      width: 100%;
+      height: 100%;
+      object-position: left;
+      object-fit: cover;
+    }
+  }
+
+  h3 {
+    color: var(--active-color);
+    font-weight: 400;
+    margin-bottom: u.rem(5);
+  }
+
+  &:hover {
+    background-color: var(--transparent-dark);
+  }
+}
+
+.border {
+  border: 1px solid red;
 }
