@@ -2,6 +2,60 @@
 @forward "layout";
 @use "../scss/util/" as u;
 
+// Header CSS
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  padding: u.rem(8) u.rem(8) 0;
+
+  &__logo {
+    padding-top: u.rem(4);
+    margin-left: u.rem(20);
+  }
+
+  &__center {
+    gap: u.rem(8);
+
+    .home {
+      display: grid;
+      place-items: center;
+      aspect-ratio: 1;
+      border-radius: 100px;
+
+      img {
+        width: 23px;
+      }
+    }
+
+    .search-bar {
+      align-items: center;
+      padding-inline: u.rem(12);
+      height: u.rem(48);
+      border-radius: u.rem(50);
+      background-color: var(--btn-color);
+
+      .search-icon {
+        width: u.rem(25);
+      }
+
+      .search-input {
+        width: u.rem(300);
+        height: 35px;
+        margin-left: 10px;
+        font-size: 1rem;
+        color: white;
+      }
+
+      .browse-icon {
+        padding-left: 10px;
+        border-left: 1px solid white;
+        width: u.rem(34);
+      }
+    }
+  }
+}
+
 // Main CSS
 
 .main {
