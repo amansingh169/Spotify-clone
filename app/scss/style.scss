@@ -10,6 +10,8 @@
   padding: u.rem(8) u.rem(8) 0;
 
   &__logo {
+    color: var(--inactive-color);
+
     padding-top: u.rem(4);
     margin-left: u.rem(20);
   }
@@ -30,12 +32,13 @@
 
     .search-bar {
       align-items: center;
-      padding-inline: u.rem(12);
+      padding-inline: u.rem(15);
       height: u.rem(48);
       border-radius: u.rem(50);
       background-color: var(--btn-color);
 
       .search-icon {
+        margin-top: u.rem(4);
         width: u.rem(25);
       }
 
@@ -49,8 +52,29 @@
 
       .browse-icon {
         padding-left: 10px;
-        border-left: 1px solid white;
+        border-left: 1px solid var(--inactive-color);
         width: u.rem(34);
+      }
+
+      &:hover {
+        background-color: hsl(0, 0%, 19%);
+        border: 1px solid hsl(0, 0%, 31%);
+      }
+    }
+  }
+
+  &__right {
+    gap: 10px;
+
+    .premium {
+      background-color: var(--active-color);
+      padding: u.rem(8) u.rem(20);
+      border-radius: u.rem(20);
+    }
+
+    .install-app {
+      img {
+        width: 20px;
       }
     }
   }
